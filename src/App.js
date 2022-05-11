@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useState } from 'react'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { Nav } from './Components/Nav';
+import { Landing } from './pages/Landing/Landing';
+import { ListLook } from './pages/List/ListLook';
+import { Login } from './pages/Login/Login';
+import { NoMatch } from './pages/NoMatch/NoMatch';
+import { View } from './pages/View/View';
 
-function App() {
+export const LoginContext = createContext();
+export const App = () => {
+
+  const [login, setLogin] = useState(window.localStorage.getItem("isLogin"));
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <BrowserRouter>
+        <Nav />
+        <LoginContext.Provider value={{ setLogin, login }}>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="Login" element={<Login />} />
+            <Route path="List" element={<ListLook />} />
+            <Route path={`/pokemon/:id`} element={<View />} />
+            <Route path="*" element={<NoMatch /> } />
+          </Routes>
+        </LoginContext.Provider>
+      </BrowserRouter>
 
-export default App;
+
+    </>
+  )
+}

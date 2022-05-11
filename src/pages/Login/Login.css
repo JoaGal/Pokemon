@@ -1,0 +1,77 @@
+
+.login-container{
+    background-color: #007acc;
+    width: 927px;
+    height: 647px;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    margin-top: 110px;
+    box-shadow: 5px 5px 1px 4px #005c99;
+}
+
+.titel-container{
+    color: #ffd11a;
+    padding-top: 65px;
+    padding-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+.login-p{
+    text-align: left;
+    padding-left: 9%;
+    padding-top: 25px;
+    font-size: 21px;
+    color: #ffd11a;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 65px;
+}
+
+input{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    width: 82.5%;
+    height: 58px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+
+input:focus{
+    box-shadow: 0px 0px 3px 4px #ffd11a;
+}
+
+.button{
+    width: 82.5%;
+    height: 73px;
+    background-color: #ffd11a;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 55px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.p-error{
+    font-size: 21px;
+    color: #991f00;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .login-container{
+      width: 75%;
+    }
+  
+    .titel-container{
+      font-size: 20px;
+      padding-top: 40px;
+    }
+}

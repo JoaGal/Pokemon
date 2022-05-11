@@ -1,0 +1,13 @@
+
+.name-poke{
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.img-poke{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
