@@ -7,7 +7,7 @@ export const ListLook = () => {
     const loginContext = useContext(LoginContext);
   return (
     <>
-        {loginContext.login === "true" ? <List/> : <Navigate to='/Login'/>}
+        {loginContext.login === "true" ? <List/> : <Navigate to='/login'/>}
     </>
   )
 }
