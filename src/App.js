@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react'
 import {
   Routes,
   Route,
-  HashRouter,
+  BrowserRouter,
 } from "react-router-dom";
 import { Nav } from './Components/Nav';
 import { Landing } from './pages/Landing/Landing';
@@ -21,7 +21,7 @@ export const App = () => {
   return (
     <>
       <div className='body'>
-        <HashRouter>
+        <BrowserRouter>
           <Nav />
           <LoginContext.Provider value={{ setLogin, login }}>
             <Routes>
@@ -32,7 +32,7 @@ export const App = () => {
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </LoginContext.Provider>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     </>
   )
