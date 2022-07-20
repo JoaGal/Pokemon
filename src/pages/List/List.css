@@ -1,13 +1,83 @@
+.bg-list {
+    background-image: url(../../Components/img/bg-repeat.jpg);
+    width: 100%;
+    height: full;
+    margin-top: 80px;
+}
 
-.name-poke{
+.box-poke {
+    box-sizing: border-box;
+    background-color: rgb(251 191 36);
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 256px;
+    height: 288px;
+}
+
+.name-poke {
     font-family: 'Press Start 2P', cursive;
     letter-spacing: 2px;
     font-size: 20px;
     margin-top: 30px;
 }
-.img-poke{
+
+.img-poke {
     width: 200px;
     height: 200px;
     margin: auto;
     margin-top: 20px;
+}
+
+.box-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.button-page {
+    margin: 40px;
+    width: 96px;
+    height: 96px;
+    cursor: pointer;
+    color: rgb(3 105 161);
+    background-color: rgb(251 191 36);
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .box-poke {
+        margin-bottom: 5px;
+        width: 170px;
+        height: 200px;
+    }
+
+    .name-poke {
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .img-poke {
+        width: 130px;
+        height: 130px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .bg-list {
+        margin-top: 100px;
+    }
+
+    .box-poke {
+        margin-top: 55px;
+    }
 }

@@ -1,0 +1,97 @@
+.box-card {
+    border-width: 8px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 11px;
+    width: 340px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0);
+    margin: auto;
+    margin-top: 240px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.xp-card {
+    float: right;
+    padding: 7px;
+    background-color: rgb(3 105 161);
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color: rgb(255, 255, 255);
+    border-radius: 45%;
+}
+
+.img-card {
+    background-color: rgb(251 191 36);
+    border-radius: 4px;
+}
+
+.name-card {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 8px;
+    font-size: 22px;
+    line-height: 50px;
+    margin-bottom: 4px;
+}
+
+.card-stats {
+    padding-top: 1px;
+}
+
+.bg-stats-card {
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.bg-stats {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-stats2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 15.5px;
+}
+
+.box-stats-card1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: rgb(226 232 240);
+    width: 80px;
+    height: 24px;
+    padding-top: 4px;
+}
+
+.box-stats-card2 {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: rgb(226 232 240);
+    width: 80px;
+    height: 24px;
+    padding-top: 4px;
+    margin-left: 20px;
+}
+
+.icon-card {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+}
+
+.box-button2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

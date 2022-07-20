@@ -1,11 +1,13 @@
+import { useRef } from 'react';
 import { useContext, useState } from 'react';
 import { LoginContext } from '../../App';
 import './Login.css';
 
 
 export const LoginForm = () => {
-    const [password, setPassword] = useState('');
-    const [email, setEmail] = useState('');
+
+    const email = useRef('');
+    const password = useRef('');
     const [error, setError] = useState();
     const loginContext = useContext(LoginContext);
 
@@ -17,7 +19,7 @@ export const LoginForm = () => {
       }
 
     const handleClick = () => {
-        if (email === 'pokemon@gmail.com' && password === 'pokemon') {
+        if (email.current.value === 'pokemon@gmail.com' && password.current.value === 'pokemon') {
 
             setError('');
 
@@ -26,7 +28,7 @@ export const LoginForm = () => {
             onSuccess();
 
         } else {
-            setError('Datos Incorrectos');
+            setError('Incorrect Data');
 
         }
     }
@@ -34,13 +36,13 @@ export const LoginForm = () => {
     return (
         <>
             <form className='login-container' onClick={handleSubmit}>
-                <h2 className='titel-container'>Porfavor ingrese la cuenta de seguridad</h2>
+                <h2 className='titel-container'>Please enter security account</h2>
                 <p className='p-error'>{error}</p>
                 <p className='login-p'>Email</p>
-                <input type="email" onChange={e => setEmail(e.target.value)} value={email} />
-                <p className='login-p'>Contraseña</p>
-                <input type='password' onChange={e => setPassword(e.target.value)} value={password} />
-                <button className='button' onClick={handleClick}>Enviar</button>
+                <input type="email" ref={email}/>
+                <p className='login-p'>Password</p>
+                <input type='password' ref={password}/>
+                <button className='button' onClick={handleClick}>Enter</button>
             </form>
         </>
     )

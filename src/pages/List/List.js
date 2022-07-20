@@ -36,15 +36,14 @@ export const List = () => {
   }
 
   return (
-    <>
+    <div className="bg-list">
       {pokemon.map((props, index) => {
 
         const id = pagina*20 + (index + 1);
 
         return (
-
           <Link to={`/pokemon/${id}`} key={props.name}>
-            <div className="box-border text-black inline-block mb-6 mt-28 ml-24 text-center bg-amber-400 w-64 h-72 rounded-md  shadow-2xl shadow-black cursor-pointer">
+            <div className="box-poke">
               <img className="img-poke" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`} alt={props.title} />
               <p className="name-poke">{props.name}</p>
             </div>
@@ -52,10 +51,10 @@ export const List = () => {
         )
       }
       )}
-      * <div className='flex justify-center mt-20 mb-20'>
-        <BsFillCaretLeftSquareFill onClick={ress} className='m-10 w-24 h-24 text-sky-700 cursor-pointer' />
-        <BsFillCaretRightSquareFill onClick={add} className='m-10	w-24 h-24 text-sky-700 cursor-pointer' />
+      * <div className='box-button'>
+        <BsFillCaretLeftSquareFill onClick={ress} className='button-page' />
+        <BsFillCaretRightSquareFill onClick={add} className='button-page' />
       </div>
-    </>
+    </div>
   )
 }

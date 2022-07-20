@@ -1,10 +1,10 @@
-
+import './NoMatch.css'
 
 export const NoMatch = () => {
   return (
-    <>
-        <h1 className="text-6xl mt-20">404</h1>
-        <code className="text-6xl mt-20">Not Found</code>
-    </>
+    <div className='box-nomatch'>
+        <h2 className="nomatch">404</h2>
+        <code className="nomatch">Not Found</code>
+    </div>
   )
 }

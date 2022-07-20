@@ -1,5 +1,4 @@
-
-.login-container{
+.login-container {
     background-color: #007acc;
     width: 927px;
     height: 647px;
@@ -10,7 +9,7 @@
     box-shadow: 5px 5px 1px 4px #005c99;
 }
 
-.titel-container{
+.titel-container {
     color: #ffd11a;
     padding-top: 65px;
     padding-bottom: 20px;
@@ -18,7 +17,7 @@
 }
 
 
-.login-p{
+.login-p {
     text-align: left;
     padding-left: 9%;
     padding-top: 25px;
@@ -28,7 +27,7 @@
     padding-top: 65px;
 }
 
-input{
+input {
     background-color: #F5F5F5;
     border-radius: 10px;
     width: 82.5%;
@@ -41,11 +40,11 @@ input{
     margin-top: 15px;
 }
 
-input:focus{
+input:focus {
     box-shadow: 0px 0px 3px 4px #ffd11a;
 }
 
-.button{
+.button {
     width: 82.5%;
     height: 73px;
     background-color: #ffd11a;
@@ -58,20 +57,20 @@ input:focus{
     font-family: 'Press Start 2P', cursive;
 }
 
-.p-error{
+.p-error {
     font-size: 21px;
     color: #991f00;
     font-family: 'Press Start 2P', cursive;
 }
 
 
-@media only screen and (max-width: 1200px){
-    .login-container{
-      width: 75%;
+@media only screen and (max-width: 1200px) {
+    .login-container {
+        width: 75%;
     }
-  
-    .titel-container{
-      font-size: 20px;
-      padding-top: 40px;
+
+    .titel-container {
+        font-size: 20px;
+        padding-top: 40px;
     }
 }

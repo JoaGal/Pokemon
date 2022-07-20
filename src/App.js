@@ -10,6 +10,7 @@ import { ListLook } from './pages/List/ListLook';
 import { Login } from './pages/Login/Login';
 import { NoMatch } from './pages/NoMatch/NoMatch';
 import { View } from './pages/View/View';
+import './App.css';
 
 export const LoginContext = createContext();
 export const App = () => {
@@ -19,20 +20,20 @@ export const App = () => {
 
   return (
     <>
-      <HashRouter>
-        <Nav />
-        <LoginContext.Provider value={{ setLogin, login }}>
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="Login" element={<Login />} />
-            <Route path="List" element={<ListLook />} />
-            <Route path={`/pokemon/:id`} element={<View />} />
-            <Route path="*" element={<NoMatch /> } />
-          </Routes>
-        </LoginContext.Provider>
-      </HashRouter>
-
-
+      <div className='body'>
+        <HashRouter>
+          <Nav />
+          <LoginContext.Provider value={{ setLogin, login }}>
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="Login" element={<Login />} />
+              <Route path="List" element={<ListLook />} />
+              <Route path={`/pokemon/:id`} element={<View />} />
+              <Route path="*" element={<NoMatch />} />
+            </Routes>
+          </LoginContext.Provider>
+        </HashRouter>
+      </div>
     </>
   )
 }

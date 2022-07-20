@@ -1,0 +1,22 @@
+.box-nomatch {
+    margin: 10%;
+    margin-top: 200px;
+    background-color: rgb(3 105 161);
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.nomatch {
+    font-size: 128px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    line-height: 1;
+    color: rgb(251 191 36);
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media only screen and (max-width: 1100px) {
+    .nomatch {
+        font-size: 60px;
+    }
+}
