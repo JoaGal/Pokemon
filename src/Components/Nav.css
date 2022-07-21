@@ -35,7 +35,6 @@
 .ul-nav {
     display: flex;
     align-items: center;
-    color: rgb(251 191 36);
 }
 
 .li-nav {
@@ -66,4 +65,7 @@
         margin-right: 30px;
         margin-left: 30px;
     }
+}
+.active{
+    color: rgb(250, 203, 83);
 }

@@ -1,16 +1,16 @@
 .login-container {
-    background-color: #007acc;
+    background-color: rgb(0, 122, 204);
     width: 927px;
     height: 647px;
     border-radius: 15px;
     margin: auto;
     text-align: center;
     margin-top: 110px;
-    box-shadow: 5px 5px 1px 4px #005c99;
+    box-shadow: 5px 5px 1px 4px rgb(0, 92, 153);
 }
 
 .titel-container {
-    color: #ffd11a;
+    color: rgb(251 191 36);
     padding-top: 65px;
     padding-bottom: 20px;
     font-family: 'Press Start 2P', cursive;
@@ -22,7 +22,7 @@
     padding-left: 9%;
     padding-top: 25px;
     font-size: 21px;
-    color: #ffd11a;
+    color: rgb(251 191 36);
     font-family: 'Press Start 2P', cursive;
     padding-top: 65px;
 }
@@ -41,13 +41,13 @@ input {
 }
 
 input:focus {
-    box-shadow: 0px 0px 3px 4px #ffd11a;
+    box-shadow: 0px 0px 3px 4px rgb(251 191 36);
 }
 
 .button {
     width: 82.5%;
     height: 73px;
-    background-color: #ffd11a;
+    background-color: rgb(255, 209, 26);
     color: #F5F5F5;
     border: none;
     border-radius: 10px;
@@ -59,7 +59,7 @@ input:focus {
 
 .p-error {
     font-size: 21px;
-    color: #991f00;
+    color: rgb(153, 31, 0);
     font-family: 'Press Start 2P', cursive;
 }
 

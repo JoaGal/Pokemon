@@ -20,7 +20,6 @@ export const App = () => {
 
   return (
     <>
-      <div className='body'>
         <BrowserRouter>
           <Nav />
           <LoginContext.Provider value={{ setLogin, login }}>
@@ -33,7 +32,6 @@ export const App = () => {
             </Routes>
           </LoginContext.Provider>
         </BrowserRouter>
-      </div>
     </>
   )
 }

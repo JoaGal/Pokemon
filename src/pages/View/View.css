@@ -1,12 +1,11 @@
 .box-card {
-    border-width: 8px;
-    border-color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+    border: 7px solid rgb(0, 0, 0);
     padding: 11px;
     width: 340px;
     box-shadow: 0 25px 50px -12px rgb(0 0 0);
     margin: auto;
-    margin-top: 240px;
+    margin-top: 150px;
     position: relative;
     border-radius: 8px;
 }
@@ -25,6 +24,7 @@
 .img-card {
     background-color: rgb(251 191 36);
     border-radius: 4px;
+    width: 304px;
 }
 
 .name-card {
