@@ -95,3 +95,25 @@
     justify-content: center;
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 1100px){
+    .box-card{
+        width: 250px;
+    } 
+    .img-card{
+        width: 214px;
+    }
+    .box-button2{
+        margin-top: 0px;
+    }
+    .xp-card{
+        font-size: 12px;
+    }
+    .card-stats{
+        font-size: 10px;
+    }
+    .name-card{
+        font-size: 20px;
+        padding: 4px;
+    }
+}

@@ -70,6 +70,12 @@
         height: 130px;
         margin-top: 10px;
     }
+
+    .button-page {
+        width: 70px;
+        height: 70px;
+    }
+
 }
 
 @media only screen and (max-width: 570px) {
