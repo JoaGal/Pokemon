@@ -54,6 +54,7 @@ input:focus {
     font-size: 24px;
     cursor: pointer;
     margin-top: 55px;
+    margin-bottom: 100px;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -67,6 +68,8 @@ input:focus {
 @media only screen and (max-width: 1200px) {
     .login-container {
         width: 75%;
+        margin-top: 150px;
+        margin-bottom: 10px;
     }
 
     .titel-container {
