@@ -39,9 +39,9 @@ export const LoginForm = () => {
                 <h2 className='titel-container'>Please enter security account</h2>
                 <p className='p-error'>{error}</p>
                 <p className='login-p'>Email</p>
-                <input type="email" ref={email}/>
+                <input type="email" ref={email} placeholder='pokemon@gmail.com'/>
                 <p className='login-p'>Password</p>
-                <input type='password' ref={password}/>
+                <input type='password' ref={password} placeholder='pokemon'/>
                 <button className='button' onClick={handleClick}>Enter</button>
             </form>
         </>
